@@ -1,0 +1,79 @@
+/*CI/00077/011
+
+STEPHEN KAWEA MBATHA
+*/
+package mobileapplication2;
+
+import javax.microedition.midlet.*;
+import javax.microedition.lcdui.*; 
+
+public class Submission extends MIDlet implements CommandListener  {
+private DateField textDate;
+private TextField textName;
+private ChoiceGroup dept;
+private int deptInt;
+private TextField textNumber;
+private TextField textEmail;
+private Form form;
+private Display display;
+private Command save;
+private Command exit;
+private Command cancel;
+private Alert alert;
+
+public Submission(){
+    display=Display.getDisplay(this);
+    textDate=new DateField("Date",DateField.DATE); 
+    textName=new TextField("Your Name",null,15,TextField.ANY); 
+    
+    dept=new ChoiceGroup("Department",Choice.POPUP); 
+    dept.append("Computer science", null);
+    dept.append("Computer science & Tech", null);
+    dept.append("Information Technology", null);
+    dept.append("Information Scince", null);
+    
+    
+    textNumber=new TextField("Phone Number",null,15,TextField.PHONENUMBER);
+    textEmail=new TextField("Date",null,15,TextField.EMAILADDR); 
+    
+    exit=new Command("EXIT",Command.SCREEN,1);
+    cancel=new Command("CANCEL",Command.SCREEN,3);
+    save=new Command("SAVE",Command.SCREEN,2);
+    
+    form=new Form("Registration");
+    form.append(textName);
+    form.append(textDate);
+    deptInt=form.append(dept);
+    form.append(textNumber);
+    form.append(textEmail);
+    
+    form.addCommand(exit);
+    form.addCommand(cancel);
+    form.addCommand(save);
+    
+}
+    public void startApp() {
+        display.setCurrent(form);
+    }
+    
+    public void pauseApp() {
+    }
+    
+    public void destroyApp(boolean unconditional) {
+    }
+    public void commandAction(Command command, Displayable displayable){
+        
+         if(command==save){
+            alert=new Alert("Saved","Details saved",null,AlertType.CONFIRMATION);
+            alert.setTimeout(Alert.FOREVER);
+            display.setCurrent(alert,form);
+        }
+         else if(command==cancel){
+             display.setCurrent(form);
+         }
+         else if(command==exit){
+           destroyApp(true);
+           notifyDestroyed();
+        }
+    }
+}

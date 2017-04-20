@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>FilterBypass - Anonymous Web Proxy</title>
+<meta name="description" content="Bypass internet filters and surf anonymously with our SSL secured web proxy service." />
+<!-- Mobile Specific Metas
+  ================================================== -->
+<!--[if IEMobile]><meta http-equiv="cleartype" content="on" /><![endif]--> 
+<meta name="MobileOptimized" content="width" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta name="HandheldFriendly" content="true" />
+
+<!-- Favicons
+	================================================== -->
+<link rel="shortcut icon" href="./themes/filterbypass/img/favicon.ico" type="image/x-icon" />
+<link rel="apple-touch-icon" href="./themes/filterbypass/img/apple-touch-icon.png" />
+<link rel="apple-touch-icon" sizes="72x72" href="./themes/filterbypass/img/apple-touch-icon-72x72.png" />
+<link rel="apple-touch-icon" sizes="114x114" href="./themes/filterbypass/img/apple-touch-icon-114x114.png" />
+<link rel="apple-touch-icon" sizes="144x144" href="./themes/filterbypass/img/apple-touch-icon-144x144.png" />
+
+<!-- CSS
+  ================================================== -->	
+<link href="./themes/filterbypass/css/main.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div class="sitewarp">
+
+<div class="top"> 
+<div class="container"> 
+<span>Welcome FilterBypass.me - Worlds Safest & SSL Secured Web Proxy!</span>
+<div class="follow-top"><span>Follow us on twitter for regular updates!</span> <a href="https://twitter.com/Filter_Bypass" class="twitter"></a></div>
+</div>
+</div>
+
+<div class="header"> 
+<div class="container main-menu"> 
+<a href="" class="logo"></a>
+<div class="main-nav"> 
+<ul class="nav">
+<li class="active"><a href="index.php">Home</a></li>
+<li><a href="cookies.php">Manage Cookies</a></li>
+<li><a href="edit-browser.php">Edit Browser</a></li>
+<li><a href="faq.php">Faq</a></li>
+<li><a href="terms.php">Terms</a></li>
+<li><a href="/articles">Proxy Articles</a></li>
+</ul>
+</div>
+<div class="clear"></div>
+</div>
+</div>
+
+<div class="container content"> 
+<div class="proxy-form">
+<div class="form-title">
+<h1>Surf Anonymously.</h1>
+<ul class="share-buttons">
+<li><a href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fwww.filterbypass.me%2F" class="facebook" target="_blank"></a></li>
+<li><a href="https://twitter.com/intent/tweet?source=https%3A%2F%2Fwww.filterbypass.me%2F&amp;text=FilterBypass.me%20-%20Free%20SSL%20Web%20proxy:%20https%3A%2F%2Fwww.filterbypass.me%2F" class="twitter" target="_blank" title="Tweet"></a></li>
+<li><a href="https://plus.google.com/share?url=https%3A%2F%2Fwww.filterbypass.me%2F" target="_blank" class="gplus" title="Share on Google+"></a></li>
+<li><a href="http://pinterest.com/pin/create/button/?url=https%3A%2F%2Fwww.filterbypass.me%2F&amp;media=http://i.imgur.com/nSqJPHW.png&amp;description=Bypass%20internet%20filters%20and%20unblock%20websites%20such%20as%20Facebook%20%2C%20Twitter%20%2C%20Youtube%20%2C%20Dailymotion%20and%20many%20more...." target="_blank" class="pint" title="Pin it"></a></li>
+<li><a href="http://www.reddit.com/submit?url=https%3A%2F%2Fwww.filterbypass.me%2F&amp;title=FilterBypass.me%20-%20Free%20SSL%20Web%20proxy" target="_blank" class="redd" title="Submit to Reddit"></a></li>
+<li><a href="mailto:?subject=FilterBypass.me%20-%20Free%20SSL%20Web%20proxy&amp;body=Bypass%20internet%20filters%20and%20unblock%20websites%20such%20as%20Facebook%20%2C%20Twitter%20%2C%20Youtube%20%2C%20Dailymotion%20and%20many%20more....:%20https%3A%2F%2Fwww.filterbypass.me%2F" class="email" target="_blank" title="Email"></a></li>
+</ul>
+</div>
+<form action="includes/process.php?action=update" method="post" class="form" id="proxy-form">
+<input type="text" name="u" id="prform" placeholder="Type the url of the website you want to unblock here e.g  http://www.youtube.com" />
+<input type="submit" value="Surf" /> <br/>
+<div id="opt" class="proxy-opt">
+<div class="col5">
+<input type="checkbox" name="encodeURL" id="encodeURL" checked="checked"><label for="encodeURL" onmouseout="exit();" >Encrypt URL </label><div class="opt-help">?<span>Encrypts the URL of the page you are viewing so that it does not contain the target site in plaintext.</span></div>
+</div><div class="col5">
+<input type="checkbox" name="encodePage" id="encodePage"><label for="encodePage" onmouseout="exit();" >Encrypt Page </label><div class="opt-help">?<span>Helps avoid filters by encrypting the page before sending it and decrypting it with javascript once received.</span></div>
+</div><div class="col5">
+<input type="checkbox" name="allowCookies" id="allowCookies" checked="checked"><label for="allowCookies" onmouseout="exit();" >Allow Cookies </label><div class="opt-help">?<span>Cookies may be required on interactive websites (especially where you need to log in) but advertisers also use cookies to track your browsing habits.</span></div>
+</div><div class="col5">
+<input type="checkbox" name="stripJS" id="stripJS"><label for="stripJS" onmouseout="exit();" >Remove Scripts </label><div class="opt-help">?<span>Remove scripts to protect your anonymity and speed up page loads. However, not all sites will provide an HTML-only alternative. (Recommended)</span></div>
+</div><div class="col5">
+<input type="checkbox" name="stripObjects" id="stripObjects"><label for="stripObjects" onmouseout="exit();" >Remove Objects </label><div class="opt-help">?<span>You can decrease page load times by removing unnecessary Flash, Java and other objects. If not removed, these may also compromise your anonymity.</span></div>
+</div></div>
+</form>
+</div>
+
+<ul class="quick-browse">
+<li class="title">Quick Browse:</li>
+<li class="yt browselnk"><a href="https://filterbypass.me/">youtube.com</a></li>
+<li class="fb browselnk"><a href="https://filterbypass.me/">facebook.com</a></li>
+<li class="dm browselnk"><a href="https://filterbypass.me/">dailymotion.com</a></li>
+<li class="twt browselnk"><a href="https://filterbypass.me/">twitter.com</a></li>
+<li class="nowv browselnk"><a href="https://filterbypass.me/">nowvideo.sx</a></li>
+</ul>
+
+<div class="adspace-728">
+<ins class="adsbygoogle" style="display:inline-block;width:728px;height:90px" data-ad-client="ca-pub-6777348526535979" data-ad-slot="3870513647"></ins>
+<script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+</div>
+<div class="adspace-320">
+<ins class="adsbygoogle" style="display:inline-block;width:320px;height:50px"
+data-ad-client="ca-pub-6777348526535979" data-ad-slot="1127560842"></ins>
+<script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+</div>
+
+<!-- CONTENT START -->
+<!--[error]-->
+<div class="col-1">
+<h1>What is FilterBypass?</h1>
+<p>FilterBypass is a free <strong>anonymous web proxy</strong> which allows people all over the world to bypass internet filters and enjoy unrestricted browsing.Unlike other web proxies we support all major streaming portals such as <a href="/articles/unblockyoutube/">Youtube</a> and Dailymotion.Enjoy being able to unblock your favorite social networks such as Facebook or Twitter with a simple click.</p>
+<p>Let us unite to combat oppression and internet censorship and surf the internet anonymously.</p>
+<h2>How does this work?</h2>
+<p>You tell us which website you want to unblock , then we fetch it for you using our server.The targeted website do not see your personal information such as your IP address &amp; browser.Thus we act as a middleman between you and the website and efficiently hide your ip address.Morever you can choose modify the information you want us to show to the targeted website by <a href="edit-browser.php">changing useragent</a>.</p>
+<p>We also allow our users to <a href="cookies.php">delete their cookies</a> anytime  for greater anonymity.Moreover there is no need to install any proxy software or vpn service to use our 100% free proxy service.</p>
+</div>
+
+<div class="row-1">
+<div class="col-3">
+<div class="icon-1"></div>
+<h2>Fast and Reliable</h2>
+<p>Our servers have been optimised to provide rapid browsing to our users.Moreover we have special mechanisms in place to prevent filters from blocking our website.</p>
+</div>             
+<div class="col-3">
+<div class="icon-2"></div>
+<h2>Highly Secured</h2>
+<p>Your connection is encrypted with a <strong>128 Bit SSL at all times </strong> when using our service to provide optimum privacy.Protecting your privacy online is our mission.</p>
+</div>
+<div class="col-3">
+<div class="icon-3"></div>
+<h2>User Friendly</h2>
+<p>Type the website you want to visit in the URL bar above and click on Surf.Anonymous browsing is just a click away:)</p>
+</div>
+</div>
+<!-- CONTENT END -->
+
+<div class="adspace-728-btm">
+<ins class="adsbygoogle" style="display:inline-block;width:728px;height:90px"
+data-ad-client="ca-pub-6777348526535979" data-ad-slot="3870513647"></ins>
+<script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+</div>
+<div class="adspace-320-btm">
+<ins class="adsbygoogle" style="display:inline-block;width:320px;height:50px"
+data-ad-client="ca-pub-6777348526535979" data-ad-slot="1127560842"></ins>
+<script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+</div>
+
+</div>
+</div>
+
+<div class="footer">
+<div class="container"> 
+Copyright &copy; 2013-2014 :- FilterBypass.me
+<span>Designed by ElitePixels.net</span>
+</div>
+</div>
+
+<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){
+	$(".browselnk").click(function(){
+		$("#prform").val('http://www.'+$(this).text().toLowerCase());
+		$("#proxy-form").submit();
+		return false;
+	});
+});
+</script>
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+	<script type="text/javascript">ginf={url:'https://www.filterbypass.me',script:'anonsurf.php',target:{h:'',p:'',b:'',u:''},enc:{u:'IhyoeCZj6ldLukAoAv8khwgFvvHfXGPtLdINDvWzG090axcyQaGVuLqN6YSTsvd3xJG02qowglkeIkDmi77CIlfE7VmphngCWMsM3E67PganoBxwyuY7G1BBKNRP0XhK',e:'1',x:'',p:''},b:'5'}</script>
+	<script type="text/javascript" src="https://www.filterbypass.me/includes/main.js?1.4.10"></script><script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-44832245-1', 'filterbypass.me');
+  ga('send', 'pageview');
+
+</script>
+</body>
+</html>

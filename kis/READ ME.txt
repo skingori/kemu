@@ -1,0 +1,3 @@
+Login as ADMIN to manage other accounts
+username >> admin
+password >> admin
